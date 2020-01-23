@@ -18,6 +18,6 @@ public class SimpleThread implements Runnable {
     public void run() {
         Random rand = new Random();
         randomNum = rand.nextInt(101);
-        System.out.println("Random Number: " + randomNum);
+        System.out.println("Random Number: " +  randomNum);
     }
 }
