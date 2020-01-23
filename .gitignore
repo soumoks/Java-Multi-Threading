@@ -1,2 +1,7 @@
 # Project exclude paths
 /out/
+/.idea/$PRODUCT_WORKSPACE_FILE$
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/Lab1 - MultiThreading - Attempt 2.iml

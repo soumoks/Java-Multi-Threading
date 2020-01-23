@@ -2,16 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class SimpleThread implements Runnable {
-    //private int randomNum;
     private ArrayList<Integer> randomNumList;
-
-    /**
-     * Getter for the randomNum member field
-     * @return
-     */
-//    public int getRandomNum(){
-//        return randomNum;
-//    }
 
     /**
      * Getter for randomNum Array List
@@ -33,9 +24,8 @@ public class SimpleThread implements Runnable {
      * Run method generates a random Num
      */
     @Override
-    public void run() {
+    public synchronized void run() {
         Random rand = new Random();
-        //randomNum = rand.nextInt(101);
         randomNumList.add(rand.nextInt(101));
         //Prints the last element in the ArrayList
         System.out.println("Random Number: " +  randomNumList.get(randomNumList.size() -1));
